@@ -2,17 +2,12 @@ package mx.edu.utez.animalesdemo3;
 
 import mx.edu.utez.animalesdemo3.models.Animal;
 import mx.edu.utez.animalesdemo3.models.DaoAnimal;
-
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-
 import java.io.PrintWriter;
-
-
 import java.io.*;
 
 
@@ -29,6 +24,7 @@ public class HelloServlet extends HttpServlet  {
 
         DaoAnimal dao = new DaoAnimal();
         List<Animal> animales = dao.findall();
+
 
 
         //estructura de la tabla css con las columnas: id, especie, dieta, habitat, nombreCientifico, nombreComun y nombreDelAnimal
